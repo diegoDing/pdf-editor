@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import {computed} from "vue";
 import {mainStore} from "../../store";
-import CanvasResize from "./CanvasResize.vue";
+import CanvasResize from "./CanvasResize/CanvasResize.vue";
 const {size}=mainStore()
 const computedWrapperStyle=computed(()=>{
     return{
