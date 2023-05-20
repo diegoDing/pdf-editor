@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {computed} from "vue";
-import {mainStore} from "../../store";
+import {mainStore} from "@/store";
 import CanvasResize from "./CanvasResize/CanvasResize.vue";
 const {size}=mainStore()
 const computedWrapperStyle=computed(()=>{
@@ -21,7 +21,7 @@ const computedWrapperStyle=computed(()=>{
 <style scoped>
 
 .wrapper{
-    margin: 0px auto;
+    margin: 0 auto;
     background: white;
     position: relative;
 }
